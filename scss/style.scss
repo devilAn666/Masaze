@@ -1,0 +1,60 @@
+@use 'variables';
+@use 'basic';
+@use 'header';
+@use 'menu';
+@use 'footer';
+
+
+.main {
+  margin: 0;
+  overflow: auto;
+}
+
+.box {
+  height: 550px;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  gap: 30px;
+}
+
+.grid__item {
+  border: 3px solid black;
+}
+
+.grid__item-img {
+  display: block;
+  width: 100%;
+}
+
+.grid__item-desc {
+  background-color: #888;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.grid__item-desc h2 {
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  color: peachpuff;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: peachpuff;
+  color: black;
+  text-decoration: none;
+}
+
+.button:hover,
+.button:focus,
+.button:active {
+  background-color: #e77b68;
+}
+

@@ -1,0 +1,16 @@
+{
+  "name": "masaze",
+  "version": "1.0.0",
+  "description": "Můj závěrečný projekt",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11/eleventy",
+    "serve": "npx @11/eleventy --serve"
+  },
+  "keywords": [],
+  "author": "Andrea Doubková",
+  "license": "ISC",
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  }
+}
