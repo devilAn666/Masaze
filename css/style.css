@@ -81,6 +81,25 @@ body {
   padding: 10px;
 }
 
+.info {
+  display: block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.info__header {
+  background-color: aquamarine;
+  color: #4d4c4d;
+  border: none;
+  padding: 15px;
+  min-height: 16.43px;
+}
+
+.info__body {
+  position: relative;
+  padding: 15px;
+}
+
 .main {
   margin: 0;
   overflow: auto;
@@ -92,13 +111,14 @@ body {
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  padding: 0 200px;
+  grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   gap: 30px;
 }
 
 .grid__item {
-  border: 3px solid black;
+  min-width: 220px;
 }
 
 .grid__item-img {
@@ -109,7 +129,7 @@ body {
 .grid__item-desc {
   background-color: #888;
   color: white;
-  padding: 20px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -121,7 +141,7 @@ body {
 
 .button {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 5px 10px;
   background-color: peachpuff;
   color: black;
   text-decoration: none;
@@ -131,4 +151,16 @@ body {
 .button:focus,
 .button:active {
   background-color: #e77b68;
+}
+
+.text__center {
+  grid-column: 1/-1;
+  grid-row: 1;
+  text-align: center;
+}
+
+.text__comment {
+  grid-column: 1/-1;
+  grid-row: 2;
+  text-align: center;
 }/*# sourceMappingURL=style.css.map */
