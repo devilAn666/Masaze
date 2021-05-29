@@ -14,6 +14,7 @@ body {
   background-image: linear-gradient( to right, variables.$c-primary 40%, variables.$c-secondary 60% );
   margin: 0;
   font-family: variables.$font-family-sans-serif;
+  color: variables.$f-primary;
 }
 
 .wrapper {

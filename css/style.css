@@ -12,6 +12,7 @@ body {
   background-image: linear-gradient(to right, #fcf7f8 40%, #db7adb 60%);
   margin: 0;
   font-family: "Nunito", sans-serif;
+  color: #343a40;
 }
 
 .wrapper {
@@ -20,7 +21,7 @@ body {
 }
 
 .header {
-  padding-top: 30px;
+  padding-top: 20px;
 }
 .header__logo {
   width: 150px;
@@ -73,7 +74,6 @@ body {
   grid-template-rows: auto;
   text-align: center;
   width: 100%;
-  margin-top: 30px;
 }
 
 .footer__copyright,
@@ -101,18 +101,9 @@ body {
   padding: 15px;
 }
 
-.main {
-  margin: 0;
-  overflow: auto;
-}
-
-.box {
-  height: 550px;
-}
-
 .grid {
   display: grid;
-  padding: 0 200px;
+  padding: 20px 200px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   gap: 30px 30px;
@@ -164,4 +155,41 @@ body {
   grid-column: 1/-1;
   grid-row: 2;
   text-align: center;
+}
+
+.main {
+  margin: 0;
+  overflow: auto;
+}
+
+.box {
+  height: 550px;
+}
+
+.detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: minmax(300px);
+  gap: 50px;
+  padding: 20px 200px;
+}
+
+.detail h3 {
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  color: peachpuff;
+}
+
+.detail__img {
+  display: block;
+  width: 100%;
+}
+
+.table {
+  border-spacing: 0;
+}
+
+td,
+th {
+  border-bottom: 1px solid black;
 }/*# sourceMappingURL=style.css.map */
