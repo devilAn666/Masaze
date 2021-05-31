@@ -7,7 +7,6 @@
   }
   
   .grid__item {
-    min-width: 220px;
     position: relative;
     overflow: hidden;
   }
@@ -48,7 +47,21 @@
     text-align: center;
   }
   .text__comment {
-    grid-column: 1 / -1;
+    grid-column: 2 / -1;
     grid-row: 2;
-    text-align: center;
+    text-align: left;
+  }
+
+  .entry {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 200px;
+    gap: 30px;
+    &__connect {
+      border: 1px solid black;
+      padding: 20px 40px;
+    }
+    &__title {
+      margin-top: 40px;
+    }
   }
