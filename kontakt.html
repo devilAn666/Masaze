@@ -1,4 +1,129 @@
 ---
 layout: templates/maintemplate.njk
-title:  Masáže Jan Tománek
+title: Masáže Jan Tománek
 ---
+
+<div class="contact">
+  <div class="contact__grid">
+    <div class="contact__grid-item">
+      <h1>Kontakt</h1>
+
+      <p>
+        Objednávat se můžete prostřednictvím formuláře, telefonicky, přes sms,
+        facebook/messenger nebo e-mailem.
+      </p>
+
+      <p>
+        Snažím se odpovídat obratem. Pokud by nebylo možné se mi dovolat,
+        zavolám vám zpět.
+      </p>
+
+      <hr />
+
+      <h3>Jan Tománek</h3>
+
+      <p><strong>IČO:</strong> 0000000</p>
+
+      <p>
+        <strong>Adresa provozovny:</strong>
+        Dopravní 1508, Liberec 30, Vratislavice n.N.
+      </p>
+
+      <p>
+        <strong>Telefon:</strong> +420 722 000 000<br />
+        <strong>E-mail:</strong> <a href="mailto:@centrum.cz">@centrum.cz</a>
+      </p>
+
+      <p>
+        <strong>Sociální sítě:</strong>
+        <a href="https://www.facebook.com/groups/358658755091310">Facebook</a>
+      </p>
+    </div>
+
+    <div class="map">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1262.4389013521925!2d15.087133385957374!3d50.740755261816986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470935b3be787d21%3A0x8eaeec1445771d27!2sDopravn%C3%AD%201508%2C%20463%2011%20Liberec-Vratislavice%20nad%20Nisou!5e0!3m2!1scs!2scz!4v1622570655696!5m2!1scs!2scz"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe
+      >"
+    </div>
+
+    <div class="contact__grid-item--availability">
+      <h2>Dostupnost</h2>
+
+      <p>
+        Od října 2020 je pro Vás připravena provozovna ve Vratislavicích nad
+        Nisou v ulici Dopravní 1508, která je dostupná všemi prostředky.
+      </p>
+
+      <p>
+        <strong>Autem:</strong> před provozovnou je možnost parkovat ve dvoře
+        nebo na přilehlém parkovišti.
+      </p>
+
+      <p>
+        <strong>Tramvají:</strong> zastávka "Kostel" na trase linek č. 5 nebo
+        11. Od tramvajové zastávky cesta trvá cca 5 minut a vede průchodem vedle
+        areálu Bitexu (po chodníku).
+      </p>
+
+      <p>
+        <strong>Vlakem:</strong> od zastávky Vratislavice nad Nisou trvá cesta
+        cca 5 minut.
+      </p>
+    </div>
+
+    <div class="contact__grid-item">
+      <h2>Kontaktní formulář</h2>
+
+      <form action="" method="post">
+        <div class="form-field">
+          <label for="jmeno" class="required">Jméno a příjmení</label>
+          <input type="text" name="jmeno" id="jmeno" required />
+        </div>
+
+        <div class="form-field">
+          <label for="email" class="required">E-mail</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+
+        <div class="form-field">
+          <label for="telefon">Telefon</label>
+          <input type="tel" name="telefon" id="telefon" />
+        </div>
+
+        <div class="form-field">
+          <label for="zprava" class="required">Zpráva</label>
+          <textarea name="zprava" id="zprava" rows="6" required></textarea>
+        </div>
+
+        <button class="button" type="submit">Odeslat zprávu</button>
+      </form>
+    </div>
+
+    <div class="contact__grid-item">
+      <h3>Provozní doba</h3>
+      
+      {% include 'partials/report-notice.njk' %}
+      
+      </div>
+      <p>
+        Termíny jsou orientační a mohou se měnit. O změnách vás budu včas
+        informovat také ve facebookové skupině masáže Liberec. V této skupině se
+        také dozvíte o různých soutěžích či akcích.
+      </p>
+
+      <p>
+        <strong>Sudý týden</strong> - dopoledne + sobota po celý den
+      </p>
+
+      <p>
+        <strong>Lichý týden</strong> - odpoledne + neděle po celý den
+      </p>
+    </div>
+  </div>
+</div>

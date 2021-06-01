@@ -11,7 +11,7 @@
   margin: 0;
   overflow: auto;
 }
-
+//úvod
 .grid__foto--openning {
   padding: 60px;
   grid-column: 4 /-1;
@@ -25,7 +25,38 @@
   grid-row: 1;
 }
 
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px 200px;
+  gap: 30px;
+  &__connect {
+    border: 1px solid black;
+    padding: 20px 40px;
+  }
+  &__title {
+    margin-top: 40px;
+  }
+}
 
+.inline__bold {
+  font-weight: bold;
+}
+
+.notice {
+  padding: 20px 200px;
+
+  &__text {
+    border: 1px solid black;
+    padding: 20px 40px;
+  }
+
+  &__text--color {
+    color: variables.$danger;
+    font-weight: bold;
+    font-size: 20px;
+  }
+}
 
 //detail masáže
 .detail {
@@ -69,3 +100,69 @@ td,
 th {
   border-bottom:1px solid black ;
 }
+
+
+//kontakt
+
+
+.contact__grid {
+  display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 50px 50px;
+  padding: 20px 200px;
+}
+
+.contact__grid-item {
+  padding: 20px 40px;
+  &--availability {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    padding: 20px 40px;
+  }
+}
+
+
+//mapa
+
+.map {
+	padding: 40px 40px;
+}
+
+//dostupnost
+
+
+
+//formulář
+
+.form-field {
+	margin-bottom: 1rem;
+}
+
+.form-field label {
+	display: block;
+	color:  hsl(0, 0%, 50%);
+	font-size: 15px;
+	margin-bottom: calc(1rem / 2);
+}
+
+.form-field :is(input, textarea, select) {
+	width: 100%;
+	padding: calc(1rem / 2);
+	border: 1px solid hsl(0, 0%, 70%);
+	border-radius: 4px;
+}
+
+.required:after {
+	content: "*";
+	color: red;
+	margin-left: 4px;
+}
+
+//zpráva-upozornění
+.report {
+  padding: 20px;
+  background-color: #b9dff5;
+  border: 2px solid #0c86cc;
+  color: red;
+}
+

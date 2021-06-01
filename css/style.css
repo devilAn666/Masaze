@@ -16,7 +16,6 @@ body {
 }
 
 .wrapper {
-  /*max-width: 1280px;*/
   margin: 0 auto;
 }
 
@@ -42,8 +41,9 @@ body {
 
 .menu {
   background-color: #ff6347;
+  position: sticky;
+  top: 0;
 }
-
 .menu__list {
   margin: 0;
   padding: 2px;
@@ -51,11 +51,9 @@ body {
   justify-content: center;
   list-style: none;
 }
-
 .menu__item:not(:last-child) {
   border-right: 1px solid white;
 }
-
 .menu__link {
   display: block;
   padding: 15px 30px;
@@ -75,28 +73,23 @@ body {
   text-align: center;
   width: 100%;
 }
-
-.footer__copyright,
-.footer__socialmedia,
-.footer__design {
+.footer__copyright, .footer__socialmedia, .footer__design {
   padding: 10px;
 }
 
-.info {
+.popup {
   display: block;
   text-align: left;
   vertical-align: middle;
 }
-
-.info__header {
+.popup__header {
   background-color: aquamarine;
   color: #4d4c4d;
   border: none;
   padding: 15px;
   min-height: 16.43px;
 }
-
-.info__body {
+.popup__body {
   position: relative;
   padding: 15px;
 }
@@ -188,6 +181,37 @@ body {
   grid-row: 1;
 }
 
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 20px 200px;
+  gap: 30px;
+}
+.info__connect {
+  border: 1px solid black;
+  padding: 20px 40px;
+}
+.info__title {
+  margin-top: 40px;
+}
+
+.inline__bold {
+  font-weight: bold;
+}
+
+.notice {
+  padding: 20px 200px;
+}
+.notice__text {
+  border: 1px solid black;
+  padding: 20px 40px;
+}
+.notice__text--color {
+  color: #dc3545;
+  font-weight: bold;
+  font-size: 20px;
+}
+
 .detail {
   display: grid;
   grid-template-columns: 1fr 2fr;
@@ -223,4 +247,55 @@ body {
 td,
 th {
   border-bottom: 1px solid black;
+}
+
+.contact__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px 50px;
+  padding: 20px 200px;
+}
+
+.contact__grid-item {
+  padding: 20px 40px;
+}
+.contact__grid-item--availability {
+  grid-column: 1/-1;
+  grid-row: 2;
+  padding: 20px 40px;
+}
+
+.map {
+  padding: 40px 40px;
+}
+
+.form-field {
+  margin-bottom: 1rem;
+}
+
+.form-field label {
+  display: block;
+  color: gray;
+  font-size: 15px;
+  margin-bottom: calc(1rem / 2);
+}
+
+.form-field :is(input, textarea, select) {
+  width: 100%;
+  padding: calc(1rem / 2);
+  border: 1px solid #b3b3b3;
+  border-radius: 4px;
+}
+
+.required:after {
+  content: "*";
+  color: red;
+  margin-left: 4px;
+}
+
+.report {
+  padding: 20px;
+  background-color: #b9dff5;
+  border: 2px solid #0c86cc;
+  color: red;
 }/*# sourceMappingURL=style.css.map */
