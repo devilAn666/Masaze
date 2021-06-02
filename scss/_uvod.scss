@@ -1,0 +1,84 @@
+@use 'variables';
+
+.preface {
+    display: block;
+    padding: 20px 200px;
+  
+    &__foto img {
+    width: 100%;
+    }
+  
+    &__text {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    }
+  }
+  
+  .info__connect {
+    border: 1px solid black;
+    padding: 20px;
+    margin-top: 20px;
+  }
+  
+  .inline__bold {
+    font-weight: bold;
+  }
+  
+  .notice__text {
+    border: 1px solid black;
+    padding: 20px 40px;
+    margin-top: 20px;
+  }
+  
+  .notice__text--color {
+    color: variables.$danger;
+    font-weight: bold;
+    font-size: 20px;
+  }
+  
+  @media screen and (min-width: 1280px) { 
+  
+    .preface__grid {
+      display: grid;
+      padding: 20px 200px;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      gap: 50px;
+    }
+  
+    .preface__foto {
+      margin: 60px auto;
+      grid-column: 2 /-1;
+    }
+  
+    .preface__text {
+      margin: 0 auto;
+      grid-column: 1 / 2;
+      grid-row: 1; 
+    }
+  
+    .info {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      padding: 20px 200px;
+      gap: 30px;
+  
+      &__connect {
+        margin-top: 0;
+      }
+  
+      &__title {
+      margin-top: 40px;
+      }
+    }
+  
+    .notice {
+      padding: 20px 200px;
+  
+      &__text {
+        margin-top: 0;
+      }
+    }
+  
+  }

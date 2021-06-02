@@ -1,0 +1,21 @@
+@use 'variables';
+
+.price {
+    padding: 20px 200px;
+    width: 1280px;
+    margin: 0 auto;
+  
+    h3 {
+      font-size: 36px;
+    }
+  }
+  
+  .table {
+    border-spacing:0;
+  
+  }
+  
+  td, 
+  th {
+    border-bottom:1px solid black ;
+  }

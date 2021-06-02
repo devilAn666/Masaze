@@ -111,6 +111,88 @@ body {
   padding: 15px;
 }
 
+.report {
+  padding: 20px;
+  background-color: #b9dff5;
+  border: 2px solid #0c86cc;
+  color: red;
+}
+
+.preface {
+  display: block;
+  padding: 20px 200px;
+}
+.preface__foto img {
+  width: 100%;
+}
+.preface__text {
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.info__connect {
+  border: 1px solid black;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.inline__bold {
+  font-weight: bold;
+}
+
+.notice__text {
+  border: 1px solid black;
+  padding: 20px 40px;
+  margin-top: 20px;
+}
+
+.notice__text--color {
+  color: #dc3545;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+@media screen and (min-width: 1280px) {
+  .preface__grid {
+    display: grid;
+    padding: 20px 200px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 50px;
+  }
+
+  .preface__foto {
+    margin: 60px auto;
+    grid-column: 2/-1;
+  }
+
+  .preface__text {
+    margin: 0 auto;
+    grid-column: 1/2;
+    grid-row: 1;
+  }
+
+  .info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 20px 200px;
+    gap: 30px;
+  }
+  .info__connect {
+    margin-top: 0;
+  }
+  .info__title {
+    margin-top: 40px;
+  }
+
+  .notice {
+    padding: 20px 200px;
+  }
+  .notice__text {
+    margin-top: 0;
+  }
+}
 .grid {
   display: grid;
   padding: 20px 200px;
@@ -186,82 +268,33 @@ body {
   margin-top: 40px;
 }
 
-.main {
-  margin: 0;
-  overflow: auto;
-}
-
-.preface__grid {
-  display: grid;
-  padding: 20px 200px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  gap: 50px;
-}
-
-.preface__foto {
-  margin: 60px auto;
-  grid-column: 2/-1;
-}
-
-.preface__text {
-  font-size: 48px;
-  font-weight: bold;
-  margin: 0 auto;
-  grid-column: 1/2;
-  grid-row: 1;
-}
-
-.info {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 20px 200px;
-  gap: 30px;
-}
-.info__connect {
-  border: 1px solid black;
-  padding: 20px 40px;
-}
-.info__title {
-  margin-top: 40px;
-}
-
-.inline__bold {
-  font-weight: bold;
-}
-
-.notice {
-  padding: 20px 200px;
-}
-.notice__text {
-  border: 1px solid black;
-  padding: 20px 40px;
-}
-.notice__text--color {
-  color: #dc3545;
-  font-weight: bold;
-  font-size: 20px;
-}
-
 .detail {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 474px;
-  gap: 50px;
+  display: block;
   padding: 20px 200px;
 }
-.detail h3 {
-  margin-top: 1.5em;
-  margin-bottom: 0.5em;
-  color: peachpuff;
-}
-
 .detail__img {
-  display: block;
   width: 100%;
-  max-height: 640px;
+  padding-top: 20px;
 }
 
+@media screen and (min-width: 1280px) {
+  .detail {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 474px;
+    gap: 50px;
+  }
+  .detail h3 {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+    color: peachpuff;
+  }
+
+  .detail__img {
+    display: block;
+    width: 100%;
+  }
+}
 .price {
   padding: 20px 200px;
   width: 1280px;
@@ -278,6 +311,38 @@ body {
 td,
 th {
   border-bottom: 1px solid black;
+}
+
+.about {
+  padding: 20px 200px;
+}
+.about__content {
+  box-sizing: border-box;
+  width: 550px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 6px 6px 10px grey;
+  background-color: transparent;
+  margin: 0 auto;
+}
+.about__foto img {
+  border-radius: 5%;
+  border: 3px solid white;
+  box-shadow: 6px 6px 10px grey;
+}
+.about__certificate {
+  margin-top: 50px;
+}
+
+.certificate {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 50px 50px;
+}
+.certificate__foto {
+  width: 150px;
+  height: 200px;
+  box-shadow: 6px 6px 10px grey;
 }
 
 .contact__grid {
@@ -345,41 +410,7 @@ th {
   margin-left: 4px;
 }
 
-.report {
-  padding: 20px;
-  background-color: #b9dff5;
-  border: 2px solid #0c86cc;
-  color: red;
-}
-
-.about {
-  padding: 20px 200px;
-}
-.about__content {
-  box-sizing: border-box;
-  width: 550px;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 6px 6px 10px grey;
-  background-color: transparent;
-  margin: 0 auto;
-}
-.about__foto img {
-  border-radius: 5%;
-  border: 3px solid white;
-  box-shadow: 6px 6px 10px grey;
-}
-.about__certificate {
-  margin-top: 50px;
-}
-
-.certificate {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 50px 50px;
-}
-.certificate__foto {
-  width: 150px;
-  height: 200px;
-  box-shadow: 6px 6px 10px grey;
+.main {
+  margin: 0;
+  overflow: auto;
 }/*# sourceMappingURL=style.css.map */

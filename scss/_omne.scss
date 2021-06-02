@@ -1,0 +1,38 @@
+@use 'variables';
+
+.about {
+    padding: 20px 200px;
+  
+    &__content {
+      box-sizing: border-box;
+      width: 550px;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 6px 6px 10px grey;
+      background-color: transparent;
+      margin: 0 auto;
+    }
+  
+    &__foto img {
+      border-radius: 5%;
+      border: 3px solid white;
+      box-shadow: 6px 6px 10px grey;
+    }
+  
+    &__certificate {
+      margin-top: 50px;
+    }
+  
+  }
+  
+  .certificate {
+    display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 50px 50px;
+  
+    &__foto {
+      width: 150px;
+      height: 200px;
+      box-shadow: 6px 6px 10px grey;
+    }
+  }
