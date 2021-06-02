@@ -1,28 +1,24 @@
 @use 'variables';
 
+.massage {
+  padding: 20px 20%;
+}
 .grid {
-  display: grid;
-  padding: 20px 200px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: auto;
-  gap: 30px 30px;
+  display: block;
 }
 
 .grid__img {
-  margin-top: 16px;
-  display: block;
-  width: 100%;
+  width: 450px;
+  margin: 0 auto;
 }
 
 .grid__item {
-  position: relative;
-  overflow: hidden;
+  width: 450px;
+  margin: 20px auto;
 }
-
 .grid__item-img {
-  display: block;
   width: 100%;
-  transition: transform 0.3s;
+  display: block;
 }
 
 .grid__item-desc {
@@ -30,48 +26,89 @@
   color: peachpuff;
   padding: 10px;
   text-align: center;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  transition: transform 0.3s;
 }
 
 .grid__item-desc p {
   margin: 0;
 }
 
-.grid__item:hover .grid__item-desc {
-  transform: translateY(-100%);
+.grid__title {
+  text-decoration: none;
 }
-
-.grid__item:hover .grid__item-img {
-  transform: scale(1.1);
-}
-
-.text__center {
-  grid-column: 1 / -1;
-  grid-row: 1;
-  text-align: center;
-}
-
-.text__comment {
-  grid-column: 2 / -1;
-  grid-row: 2;
-  text-align: left;
-}
-
 
 .entry {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 20px 200px;
-  gap: 30px;
+  display: block;
   &__connect {
     border: 1px solid black;
     padding: 20px 40px;
+    margin-top: 20px;
   }
-  &__title {
-    margin-top: 40px;
+}
+
+.text__center {
+  text-align: center;
+}
+
+@media screen and (min-width: 1280px) {
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    gap: 30px 30px;
+  }
+
+  .grid__img {
+    margin-top: 16px;
+    display: block;
+    width: 100%;
+  }
+
+  .grid__item {
+    position: relative;
+    overflow: hidden;
+    width: inherit;
+  }
+
+  .grid__item-img {
+    transition: transform 0.3s;
+  }
+
+  .grid__item-desc {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    transition: transform 0.3s;
+  }
+
+  .grid__item:hover .grid__item-desc {
+    transform: translateY(-100%);
+  }
+
+  .grid__item:hover .grid__item-img {
+    transform: scale(1.1);
+  }
+
+  .text__center {
+    grid-column: 1 / -1;
+    grid-row: 1;
+  }
+
+  .text__comment {
+    grid-column: 2 / -1;
+    grid-row: 2;
+    text-align: left;
+  }
+
+
+  .entry {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+    &__title {
+      margin-top: 40px;
+    }
   }
 }

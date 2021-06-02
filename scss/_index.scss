@@ -2,7 +2,7 @@
 
 .preface {
     display: block;
-    padding: 20px 200px;
+    padding: 20px 20%;
   
     &__foto img {
     width: 100%;
@@ -41,7 +41,6 @@
   
     .preface__grid {
       display: grid;
-      padding: 20px 200px;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: auto;
       gap: 50px;
@@ -61,7 +60,6 @@
     .info {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      padding: 20px 200px;
       gap: 30px;
   
       &__connect {
@@ -74,8 +72,7 @@
     }
   
     .notice {
-      padding: 20px 200px;
-  
+      padding-top: 20px;
       &__text {
         margin-top: 0;
       }
