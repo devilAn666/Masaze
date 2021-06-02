@@ -1,36 +1,42 @@
 @use 'variables';
 
-.menu {
-  background-color: variables.$menu-primary;
-  position: sticky;
-  top: 0;
 
-  &__list {
-    margin: 0;
-    padding: 2px;
-    display: flex;
-    justify-content: center;
-    list-style: none;  
-  }
 
-  &__item:not(:last-child) {
-    border-right: 1px solid variables.$menu-secondary;
-  }
 
-  &__link {
-    display: block;
-    padding: 15px 30px;
-    color: variables.$menu-secondary;
-    text-decoration: none;
-    font-weight: bold;
+@media screen and (min-width: 1280px) {
+
+  .menu {
+    background-color: variables.$menu-primary;
+    position: sticky;
+    top: 0;
+    z-index: 99;
   
-    &:hover,
-    &:focus {
-      background-color: variables.$menu-secondary;
-      color: variables.$menu-primary;
+    &__list {
+      margin: 0;
+      padding: 2px;
+      display: flex;
+      justify-content: center;
+      list-style: none;  
     }
-  }
   
+    &__item:not(:last-child) {
+      border-right: 1px solid variables.$menu-secondary;
+    }
+  
+    &__link {
+      display: block;
+      padding: 15px 30px;
+      color: variables.$menu-secondary;
+      text-decoration: none;
+      font-weight: bold;
+    
+      &:hover,
+      &:focus {
+        background-color: variables.$menu-secondary;
+        color: variables.$menu-primary;
+      }
+    }
+    
+  }  
+
 }
-
-

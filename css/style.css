@@ -39,61 +39,68 @@ body {
   text-align: center;
 }
 
-.menu {
-  background-color: #ff6347;
-  position: sticky;
-  top: 0;
+@media screen and (min-width: 1280px) {
+  .menu {
+    background-color: #ff6347;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+  }
+  .menu__list {
+    margin: 0;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  .menu__item:not(:last-child) {
+    border-right: 1px solid white;
+  }
+  .menu__link {
+    display: block;
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .menu__link:hover, .menu__link:focus {
+    background-color: white;
+    color: #ff6347;
+  }
 }
-.menu__list {
-  margin: 0;
-  padding: 2px;
-  display: flex;
-  justify-content: center;
-  list-style: none;
-}
-.menu__item:not(:last-child) {
-  border-right: 1px solid white;
-}
-.menu__link {
-  display: block;
-  padding: 15px 30px;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-}
-.menu__link:hover, .menu__link:focus {
-  background-color: white;
-  color: #ff6347;
-}
-
 .footer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
   text-align: center;
-  width: 100%;
-}
-.footer__copyright, .footer__socialmedia, .footer__design {
-  padding: 10px;
 }
 
-.footer__button {
-  display: inline-block;
-  text-decoration: none;
-  text-align: center;
-  font-weight: bold;
-  color: whitesmoke;
-  padding: 5px;
-  width: 100px;
-  background-color: #2658c4;
-  border-radius: 10px;
-  margin-top: 15px;
-}
+@media screen and (min-width: 1280px) {
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    text-align: center;
+    width: 100%;
+  }
+  .footer__copyright, .footer__socialmedia, .footer__design {
+    padding: 10px;
+  }
 
-.footer__button:hover {
-  background-color: #3b5998;
-}
+  .footer__button {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    color: whitesmoke;
+    padding: 5px;
+    width: 100px;
+    background-color: #2658c4;
+    border-radius: 10px;
+    margin-top: 15px;
+  }
 
+  .footer__button:hover {
+    background-color: #3b5998;
+  }
+}
 .popup {
   display: block;
   text-align: left;
@@ -119,7 +126,6 @@ body {
 }
 
 .preface {
-  display: block;
   padding: 20px 20%;
 }
 .preface__foto img {
@@ -145,6 +151,7 @@ body {
   border: 1px solid black;
   padding: 20px 40px;
   margin-top: 20px;
+  text-align: center;
 }
 
 .notice__text--color {
@@ -189,14 +196,12 @@ body {
   }
   .notice__text {
     margin-top: 0;
+    text-align: left;
   }
 }
 .massage {
   padding: 20px 20%;
-}
-
-.grid {
-  display: block;
+  text-align: center;
 }
 
 .grid__img {
@@ -218,7 +223,6 @@ body {
   background-color: rgba(0, 0, 0, 0.5);
   color: peachpuff;
   padding: 10px;
-  text-align: center;
 }
 
 .grid__item-desc p {
@@ -229,17 +233,10 @@ body {
   text-decoration: none;
 }
 
-.entry {
-  display: block;
-}
 .entry__connect {
   border: 1px solid black;
   padding: 20px 40px;
   margin-top: 20px;
-}
-
-.text__center {
-  text-align: center;
 }
 
 @media screen and (min-width: 1280px) {
@@ -297,14 +294,14 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+    text-align: left;
   }
   .entry__title {
     margin-top: 40px;
   }
 }
 .detail {
-  display: block;
-  padding: 20px 200px;
+  padding: 20px 20%;
 }
 .detail__img {
   width: 100%;
@@ -322,11 +319,6 @@ body {
     margin-top: 1.5em;
     margin-bottom: 0.5em;
     color: peachpuff;
-  }
-
-  .detail__img {
-    display: block;
-    width: 100%;
   }
 }
 .price {
@@ -348,12 +340,10 @@ th {
 }
 
 .about {
-  display: block;
   padding: 20px 20%;
 }
 .about__content {
-  box-sizing: border-box;
-  max-width: 60%;
+  width: 100%;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 6px 6px 10px grey;
@@ -379,27 +369,24 @@ th {
     padding: 20px 20%;
   }
   .about__foto img {
-    border-radius: 5%;
-    border: 3px solid white;
+    border-radius: 15px;
+    border: 3px solid transparent;
     box-shadow: 6px 6px 10px grey;
   }
   .about__certificate {
     margin-top: 50px;
+    display: grid;
   }
 
   .certificate {
-    display: grid;
     grid-template-columns: repeat(6, 1fr);
-    gap: 50px 50px;
   }
   .certificate__foto {
-    width: 100%;
-    height: 150px;
     box-shadow: 6px 6px 10px grey;
+    display: block;
   }
 }
 .contact {
-  display: block;
   padding: 20px 20%;
 }
 

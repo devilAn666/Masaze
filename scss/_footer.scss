@@ -1,32 +1,39 @@
 @use 'variables';
 
 .footer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
   text-align: center;
-  width: 100%;
-  
-  &__copyright,
-  &__socialmedia,
-  &__design {
-  padding: 10px;
+}
+
+@media screen and (min-width: 1280px) {
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    text-align: center;
+    width: 100%;
+    
+    &__copyright,
+    &__socialmedia,
+    &__design {
+    padding: 10px;
+    }
   }
-}
-
-.footer__button {
-  display: inline-block;
-  text-decoration: none;
-  text-align: center;
-  font-weight: bold;
-  color: whitesmoke;
-  padding: 5px;
-  width: 100px;
-  background-color: #2658c4;
-  border-radius: 10px;
-  margin-top: 15px;
-}
-
-.footer__button:hover {
-  background-color: #3b5998;
+  
+  .footer__button {
+    display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    color: whitesmoke;
+    padding: 5px;
+    width: 100px;
+    background-color: #2658c4;
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+  
+  .footer__button:hover {
+    background-color: #3b5998;
+  }
 }

@@ -2,9 +2,7 @@
 
 .massage {
   padding: 20px 20%;
-}
-.grid {
-  display: block;
+  text-align: center;
 }
 
 .grid__img {
@@ -25,7 +23,6 @@
   background-color: rgba(0, 0, 0, 0.5);
   color: peachpuff;
   padding: 10px;
-  text-align: center;
 }
 
 .grid__item-desc p {
@@ -37,17 +34,14 @@
 }
 
 .entry {
-  display: block;
-  &__connect {
+   &__connect {
     border: 1px solid black;
     padding: 20px 40px;
     margin-top: 20px;
   }
 }
 
-.text__center {
-  text-align: center;
-}
+
 
 @media screen and (min-width: 1280px) {
 
@@ -106,6 +100,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
+    text-align: left;
 
     &__title {
       margin-top: 40px;

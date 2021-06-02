@@ -1,8 +1,7 @@
 @use 'variables';
 
 .detail {
-    display: block;
-    padding: 20px 200px;
+    padding: 20px 20%;
   
     &__img {
       width: 100%;
@@ -24,8 +23,5 @@
       }
     }
   
-    .detail__img {
-      display: block;
-      width: 100%;
-    }
+
   }

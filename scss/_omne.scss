@@ -1,12 +1,10 @@
 @use 'variables';
 
 .about {
-  display: block;
   padding: 20px 20%;
 
   &__content {
-    box-sizing: border-box;
-    max-width: 60%;
+    width: 100%;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 6px 6px 10px grey;
@@ -36,25 +34,26 @@
     padding: 20px 20%;
 
     &__foto img {
-      border-radius: 5%;
-      border: 3px solid white;
+      border-radius: 15px;
+      border: 3px solid transparent;
       box-shadow: 6px 6px 10px grey;
     }
 
     &__certificate {
       margin-top: 50px;
+      display: grid;
+
     }
   }
 
   .certificate {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    gap: 50px 50px;
+        grid-template-columns: repeat(6, 1fr);
+
 
     &__foto {
-      width: 100%;
-      height: 150px;
       box-shadow: 6px 6px 10px grey;
+      display: block;
+     
     }
   }
 }
