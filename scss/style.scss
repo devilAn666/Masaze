@@ -11,18 +11,27 @@
   margin: 0;
   overflow: auto;
 }
+
 //úvod
-.grid__foto--openning {
-  padding: 60px;
-  grid-column: 4 /-1;
+.preface__grid {
+  display: grid;
+  padding: 20px 200px;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: auto;
+  gap: 50px;
 }
 
-.grid__text {
+.preface__foto {
+  margin: 60px;
+  grid-column: 2 /-1;
+}
+
+.preface__text {
   font-size: 48px;
   font-weight: bold;
-  margin: 0;
-  grid-column: 1 / 4;
-  grid-row: 1;
+  margin: 0 60px;
+  grid-column: 1 / 2;
+  grid-row: 1; 
 }
 
 .info {
@@ -78,10 +87,7 @@
   max-height: 640px;
 }
 
-
-
 //ceník
-
 .price {
   padding: 20px 200px;
   width: 1280px;
@@ -91,6 +97,7 @@
     font-size: 36px;
   }
 }
+
 .table {
   border-spacing:0;
 
@@ -101,10 +108,7 @@ th {
   border-bottom:1px solid black ;
 }
 
-
 //kontakt
-
-
 .contact__grid {
   display: grid;
 	grid-template-columns: 1fr 1fr;
@@ -121,19 +125,27 @@ th {
   }
 }
 
+.contact__button {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  color: whitesmoke;
+  padding: 5px;
+  width: 100px;
+  background-color: #2658c4;
+  border-radius: 10px;
+}
+.contact__button:hover {
+  background-color: #3b5998;
+}
 
 //mapa
-
 .map {
 	padding: 40px 40px;
 }
 
-//dostupnost
-
-
-
 //formulář
-
 .form-field {
 	margin-bottom: 1rem;
 }
@@ -166,3 +178,40 @@ th {
   color: red;
 }
 
+//o mně
+.about {
+  padding: 20px 200px;
+
+  &__content {
+    box-sizing: border-box;
+    width: 550px;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px grey;
+    background-color: transparent;
+    margin: 0 auto;
+  }
+
+  &__foto img {
+    border-radius: 5%;
+    border: 3px solid white;
+    box-shadow: 6px 6px 10px grey;
+  }
+
+  &__certificate {
+    margin-top: 50px;
+  }
+
+}
+
+.certificate {
+  display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	gap: 50px 50px;
+
+  &__foto {
+    width: 150px;
+    height: 200px;
+    box-shadow: 6px 6px 10px grey;
+  }
+}
