@@ -154,10 +154,6 @@ body {
     padding: 10px;
   }
 
-  p {
-    margin-top: 5px;
-  }
-
   .footer__design p {
     color: #343a40;
     font-size: 1em;
@@ -189,7 +185,7 @@ body {
   z-index: 99;
 }
 .popup__header {
-  background-color: aquamarine;
+  background-color: #04dcfd;
   color: #4d4c4d;
   border: none;
   padding: 10px 20px;
@@ -218,10 +214,11 @@ body {
   top: 0;
   right: 0;
   border: none;
-  background-color: black;
+  background-color: transparent;
   color: white;
   padding: 2.5px 5px;
   font-size: 10px;
+  font-weight: bold;
   line-height: 1;
 }
 
@@ -254,7 +251,7 @@ body {
   }
 }
 .report {
-  padding: 20px;
+  padding: 20px 20px;
   background-color: #b9dff5;
   border: 2px solid #0c86cc;
   color: red;
@@ -273,7 +270,7 @@ body {
 }
 
 .info__connect {
-  border: 1px solid black;
+  border: 1px solid #343a40;
   padding: 20px;
   margin-top: 20px;
 }
@@ -283,7 +280,7 @@ body {
 }
 
 .notice__text {
-  border: 1px solid black;
+  border: 1px solid #343a40;
   padding: 20px 20px;
   margin-top: 20px;
 }
@@ -510,23 +507,48 @@ body {
   }
 }
 .price {
-  padding: 20px 200px;
-  width: 1280px;
-  margin: 0 auto;
+  padding: 5px 5%;
 }
-.price h3 {
+.price__title {
   font-size: 36px;
+  text-align: center;
 }
-
-.table {
+.price__table {
+  max-width: 100%;
   border-spacing: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.price__reward, .price__place, .price__payment {
+  border: 1px solid #343a40;
+  padding: 20px 20px;
+  margin-top: 20px;
+}
+.price__place h4, .price__place p, .price__place a {
+  margin: 0;
+}
+.price td,
+.price th {
+  border-bottom: 1px solid #343a40;
+  text-align: left;
+  padding: 10px 0;
 }
 
-td,
-th {
-  border-bottom: 1px solid black;
+.cena {
+  padding-left: 50px;
+  text-align: right;
 }
 
+@media screen and (min-width: 960px) {
+  .price {
+    padding: 10px 10%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .price {
+    padding: 20px 20%;
+  }
+}
 .about {
   padding: 5px 5%;
 }
@@ -591,7 +613,7 @@ th {
 
 .contact__grid-item,
 .contact__grid-item--availability {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 @media screen and (min-width: 960px) {

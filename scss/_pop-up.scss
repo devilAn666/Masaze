@@ -9,7 +9,7 @@
   z-index: 99;
 
   &__header {
-    background-color: aquamarine;
+    background-color: variables.$info;
     color: #4d4c4d;
     border: none;
     padding: 10px 20px;
@@ -43,10 +43,11 @@
   top: 0;
   right: 0;
   border: none;
-  background-color: black;
+  background-color: transparent;
   color: white;
   padding: 2.5px 5px;
   font-size: 10px;
+  font-weight: bold;
   line-height: 1;
 }
 
