@@ -20,25 +20,47 @@ body {
 }
 
 .header {
-  padding-top: 20px;
+  padding-top: 10px;
 }
 .header__logo {
-  width: 150px;
+  width: 75px;
   margin-left: auto;
   margin-right: auto;
 }
 .header__title {
   margin: 0 0 10px 0;
-  font-size: 3em;
+  font-size: 2em;
   text-align: center;
   font-weight: bold;
   color: #ff6347;
 }
 
 .logo__name {
+  font-size: 0.7em;
   text-align: center;
 }
 
+@media screen and (min-width: 960px) {
+  .header {
+    padding-top: 20px;
+  }
+  .header__logo {
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .header__title {
+    margin: 0 0 10px 0;
+    font-size: 3em;
+    text-align: center;
+    font-weight: bold;
+    color: #ff6347;
+  }
+
+  .logo__name {
+    text-align: center;
+  }
+}
 .menu__checkbox {
   position: absolute;
   left: -9999px;
@@ -245,7 +267,7 @@ body {
   width: 100%;
 }
 .preface__text {
-  font-size: 1.5em;
+  font-size: 1em;
   font-weight: bold;
   text-align: center;
 }

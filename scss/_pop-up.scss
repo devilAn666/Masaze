@@ -50,33 +50,29 @@
   line-height: 1;
 }
 
-
-
 @media screen and (min-width: 780px) {
-    .popup {
-      width: 500px;
-  
-      &__header {
-  
-        h2 {
-          font-size: 1em;
-          margin-top: 20px;
-          margin-bottom: 20px;
-        }
-      }
+  .popup {
+    width: 500px;
 
-      p,
-      li {
-        font-size: 0.8em;
+    &__header {
+      h2 {
+        font-size: 1em;
+        margin-top: 20px;
+        margin-bottom: 20px;
       }
     }
-  }
 
-  #zavrit {
-    padding: 5px 10px;
-    font-size: 20px;
+    p,
+    li {
+      font-size: 0.8em;
+    }
   }
+}
 
+#zavrit {
+  padding: 5px 10px;
+  font-size: 20px;
+}
 
 @media screen and (min-width: 1280px) {
   .popup {

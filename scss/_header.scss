@@ -1,17 +1,17 @@
 @use 'variables';
 
 .header {
-    padding-top: 20px;
+    padding-top: 10px;
    
     &__logo {
-        width: 150px;
+        width: 75px;
         margin-left: auto;
         margin-right: auto;
     }
 
     &__title {
         margin: 0 0 10px 0;
-        font-size: 3em;
+        font-size: 2em;
         text-align: center;
         font-weight: bold;
         color: variables.$c-title;
@@ -19,5 +19,34 @@
 }
    
 .logo__name {
+   font-size: 0.7em;
    text-align: center;
 }
+
+
+@media screen and (min-width: 960px) {
+    .header {
+        padding-top: 20px;
+       
+        &__logo {
+            width: 150px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    
+        &__title {
+            margin: 0 0 10px 0;
+            font-size: 3em;
+            text-align: center;
+            font-weight: bold;
+            color: variables.$c-title;
+        }
+    }
+       
+    .logo__name {
+       text-align: center;
+    }
+
+}
+
+
