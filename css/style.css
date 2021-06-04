@@ -58,6 +58,7 @@ body {
   }
 
   .logo__name {
+    font-size: 1em;
     text-align: center;
   }
 }
@@ -68,6 +69,7 @@ body {
 
 .menu__toggler {
   cursor: pointer;
+  font-weight: bold;
 }
 
 .menu__list {
