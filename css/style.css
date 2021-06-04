@@ -173,10 +173,18 @@ body {
   padding: 10px 20px;
   min-height: 16.43px;
 }
+.popup__header h2 {
+  font-size: 0.8em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 .popup__body {
   position: relative;
   padding: 10px 20px;
   background-color: white;
+}
+.popup__body ul {
+  padding-left: 25px;
 }
 .popup__body p,
 .popup__body li {
@@ -190,14 +198,19 @@ body {
   border: none;
   background-color: black;
   color: white;
-  padding: 5px 10px;
-  font-size: 20px;
+  padding: 2.5px 5px;
+  font-size: 10px;
   line-height: 1;
 }
 
 @media screen and (min-width: 780px) {
   .popup {
     width: 400px;
+  }
+  .popup__header h2 {
+    font-size: 0.9cem;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .popup p,
 .popup li {
@@ -208,11 +221,21 @@ body {
   .popup {
     width: 500px;
   }
+  .popup__header h2 {
+    font-size: 1em;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
   .popup p,
 .popup li {
     font-size: 0.8em;
   }
 }
+#zavrit {
+  padding: 5px 10px;
+  font-size: 20px;
+}
+
 @media screen and (min-width: 1280px) {
   .popup {
     width: 600px;

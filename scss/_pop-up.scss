@@ -14,12 +14,22 @@
     border: none;
     padding: 10px 20px;
     min-height: 16.43px;
+
+    h2 {
+      font-size: 0.8em;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
   }
 
   &__body {
     position: relative;
     padding: 10px 20px;
     background-color: white;
+
+    ul {
+      padding-left: 25px;
+    }
 
     p,
     li {
@@ -35,14 +45,23 @@
   border: none;
   background-color: black;
   color: white;
-  padding: 5px 10px;
-  font-size: 20px;
+  padding: 2.5px 5px;
+  font-size: 10px;
   line-height: 1;
 }
 
 @media screen and (min-width: 780px) {
   .popup {
     width:400px;
+
+    &__header {
+  
+      h2 {
+        font-size: 0.9cem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+      }
+    }
 
     p,
     li {
@@ -56,11 +75,25 @@
     .popup {
       width: 500px;
   
+      &__header {
+  
+        h2 {
+          font-size: 1em;
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+      }
+
       p,
       li {
         font-size: 0.8em;
       }
     }
+  }
+
+  #zavrit {
+    padding: 5px 10px;
+    font-size: 20px;
   }
 
 
