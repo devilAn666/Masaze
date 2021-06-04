@@ -1,21 +1,64 @@
 @use 'variables';
 
 .popup {
-    display: block;
-    text-align: left;
-    vertical-align: middle;
+  position: fixed;
+  width: 400px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
 
-    &__header {
-        background-color: aquamarine;
-        color: #4d4c4d;
-        border:none;
-        padding: 15px;
-        min-height: 16.43px;
-    }
+  &__header {
+    background-color: aquamarine;
+    color: #4d4c4d;
+    border: none;
+    padding: 10px 20px;
+    min-height: 16.43px;
+  }
 
-    &__body {
-        position: relative;
-        padding: 15px;
-    
+  &__body {
+    position: relative;
+    padding: 10px 20px;
+    background-color: white;
+
+    p,
+    li {
+      font-size: 0.7em;
     }
+  }
+}
+
+#zavrit {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  font-size: 20px;
+  line-height: 1;
+}
+
+@media screen and (min-width: 980px) {
+    .popup {
+      width: 500px;
+  
+      p,
+      li {
+        font-size: 0.8em;
+      }
+    }
+  }
+
+
+@media screen and (min-width: 1280px) {
+  .popup {
+    width: 600px;
+
+    p,
+    li {
+      font-size: 0.9em;
+    }
+  }
 }

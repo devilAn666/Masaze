@@ -1,42 +1,78 @@
 @use 'variables';
 
+.menu__checkbox {
+  position: absolute;
+  left: -9999px;
+
+}
+
+.menu__toggler {
+  cursor: pointer;
+}
 
 
+.menu__list {
+  display: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: variables.$menu-primary;
+}
 
-@media screen and (min-width: 1280px) {
+.menu-item {
+  border-bottom: 1px solid white;
+}
 
+.menu__link {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+}
+
+.menu__link:hover {
+  background-color: #cc4f39;
+}
+
+.menu__checkbox:checked ~ .menu__list {
+  display: block;
+}
+
+@media screen and (min-width: 960px) {
   .menu {
     background-color: variables.$menu-primary;
     position: sticky;
     top: 0;
     z-index: 99;
-  
+
+    &__toggler {
+      display: none;
+    }
+
     &__list {
       margin: 0;
       padding: 2px;
-      display: flex;
+      display: flex !important;
       justify-content: center;
-      list-style: none;  
+      list-style: none;
     }
-  
+
     &__item:not(:last-child) {
       border-right: 1px solid variables.$menu-secondary;
     }
-  
+
     &__link {
       display: block;
       padding: 15px 30px;
       color: variables.$menu-secondary;
       text-decoration: none;
       font-weight: bold;
-    
+
       &:hover,
       &:focus {
         background-color: variables.$menu-secondary;
         color: variables.$menu-primary;
       }
     }
-    
-  }  
-
+  }
 }

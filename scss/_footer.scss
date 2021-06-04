@@ -2,24 +2,42 @@
 
 .footer {
   text-align: center;
+  margin: 10px;
 }
 
-@media screen and (min-width: 1280px) {
+.footer p {
+  margin: 0;
+}
 
+.footer__design p {
+  color: variables.$f-secondary;
+  font-size: 10px;
+}
+
+@media screen and (min-width: 960px) {
   .footer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
-    text-align: center;
-    width: 100%;
-    
+    margin: 0;
+
     &__copyright,
     &__socialmedia,
     &__design {
-    padding: 10px;
+      padding: 10px;
     }
   }
-  
+
+  p {
+    margin-top: 5px;
+  }
+
+  .footer__design p {
+    color: variables.$f-primary;
+    font-size: 1em;
+    margin-top: 5px;
+  }
+
   .footer__button {
     display: inline-block;
     text-decoration: none;
@@ -30,9 +48,8 @@
     width: 100px;
     background-color: #2658c4;
     border-radius: 10px;
-    margin-top: 15px;
   }
-  
+
   .footer__button:hover {
     background-color: #3b5998;
   }

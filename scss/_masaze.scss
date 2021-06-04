@@ -1,17 +1,16 @@
 @use 'variables';
 
 .massage {
-  padding: 20px 20%;
-  text-align: center;
+  padding: 5px 5%;
 }
 
 .grid__img {
-  width: 450px;
+  width: 100%;
   margin: 0 auto;
 }
 
 .grid__item {
-  width: 450px;
+  width: 100%;
   margin: 20px auto;
 }
 .grid__item-img {
@@ -31,37 +30,44 @@
 
 .grid__title {
   text-decoration: none;
+  text-align: center;
 }
 
 .entry {
-   &__connect {
+  &__connect {
     border: 1px solid black;
-    padding: 20px 40px;
-    margin-top: 20px;
+    padding: 20px 20px;
+    margin-top: 30px;
   }
 }
 
+.text__center,
+.text__center--info {
+  text-align: center;
+}
 
-
-@media screen and (min-width: 1280px) {
-
+@media screen and (min-width: 960px) {
+  .massage {
+    padding: 10px 10%;
+  }
   .grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
-    gap: 30px 30px;
+    gap: 15px 15px;
   }
 
   .grid__img {
-    margin-top: 16px;
     display: block;
     width: 100%;
+    margin-top: 20px;
   }
 
   .grid__item {
     position: relative;
     overflow: hidden;
     width: inherit;
+    margin: 0;
   }
 
   .grid__item-img {
@@ -89,21 +95,51 @@
     grid-row: 1;
   }
 
+  .text__center--info {
+    text-align: unset;
+  }
+
   .text__comment {
     grid-column: 2 / -1;
     grid-row: 2;
     text-align: left;
   }
 
-
   .entry {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    gap: 15px;
     text-align: left;
+
+    &__connect {
+      padding: 20px 40px;
+      margin-top: 15px;
+    }
 
     &__title {
       margin-top: 40px;
+    }
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .massage {
+    padding: 20px 20%;
+  }
+
+  .grid {
+    gap: 30px 30px;
+
+    &__img {
+      margin-top: 10px;
+    }
+  }
+
+  .entry {
+    gap: 30px;
+
+    &__connect {
+      margin-top: 30px;
     }
   }
 }

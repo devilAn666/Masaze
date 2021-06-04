@@ -1,7 +1,7 @@
 @use 'variables';
 
 .contact {
-  padding: 20px 20%;
+  padding: 5px 5%;
 }
 
 .form-field {
@@ -33,19 +33,23 @@
   margin-top: 40px;
 }
 
-@media screen and (min-width: 1280px) {
-  .contact__grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 30px 30px;
-  }
+@media screen and (min-width: 960px) {
+  .contact {
+    padding: 10px 10%;
 
-  .contact__grid-item {
-    padding: 20px 40px;
-    &--availability {
-      grid-column: 1 / -1;
-      grid-row: 2;
+    &__grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 15px 15px;
+    }
+
+    &__grid-item {
       padding: 20px 40px;
+      &--availability {
+        grid-column: 1 / -1;
+        grid-row: 2;
+        padding: 20px 40px;
+      }
     }
   }
 
@@ -103,5 +107,15 @@
     content: "*";
     color: red;
     margin-left: 4px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .contact {
+    padding: 20px 20%;
+
+    &__grid {
+      gap: 30px 30px;
+    }
   }
 }

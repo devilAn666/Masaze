@@ -1,59 +1,42 @@
 @use 'variables';
 
 .about {
-  padding: 20px 20%;
+  padding: 5px 5%;
 
-  &__content {
-    width: 100%;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 6px 6px 10px grey;
-    margin: 0 auto;
+  h2 {
+    text-align: center;
   }
 
-  &__certificate h2 {
-    text-align: center;
-    margin-top: 10%;
+  &__content {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 6px 6px 10px grey;
+    margin: 2% auto;
+  }
+
+  &__foto img {
+    border-radius: 15px;
+    border: 3px solid transparent;
+    box-shadow: 3px 3px 5px grey;
   }
 }
 
-.certificate {
-  display: flex;
-  flex-wrap: wrap;
-  
-  &__foto {
-    flex: 0 0 calc((100% - 20px) / 3);
-    box-shadow: 6px 6px 10px grey;
-    height: 200px;
+@media screen and (min-width: 960px) {
+  .about {
+    padding: 10px 10%;
+
+    &__content {
+      padding: 40px;
+    }
   }
 }
 
 @media screen and (min-width: 1280px) {
-
   .about {
     padding: 20px 20%;
 
-    &__foto img {
-      border-radius: 15px;
-      border: 3px solid transparent;
-      box-shadow: 6px 6px 10px grey;
-    }
-
-    &__certificate {
-      margin-top: 50px;
-      display: grid;
-
-    }
-  }
-
-  .certificate {
-        grid-template-columns: repeat(6, 1fr);
-
-
-    &__foto {
-      box-shadow: 6px 6px 10px grey;
-      display: block;
-     
+    &__content {
+      padding: 60px;
     }
   }
 }
