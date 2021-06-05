@@ -62,16 +62,23 @@ body {
     text-align: center;
   }
 }
+.menu {
+  text-align: center;
+  background-color: #ff6347;
+}
 .menu__checkbox {
   position: absolute;
   left: -9999px;
 }
-
+.menu__container {
+  width: 100%;
+  margin: 10px auto;
+  text-align: center;
+}
 .menu__toggler {
   cursor: pointer;
-  font-weight: bold;
+  color: white;
 }
-
 .menu__list {
   display: none;
   margin: 0;
@@ -79,16 +86,14 @@ body {
   list-style: none;
   background-color: #ff6347;
 }
-
-.menu-item {
-  border-bottom: 1px solid white;
-}
-
 .menu__link {
   display: block;
   padding: 15px;
-  text-decoration: none;
   color: white;
+}
+
+.menu-item {
+  border-bottom: 1px solid white;
 }
 
 .menu__link:hover {
@@ -283,7 +288,7 @@ body {
 
 .notice__text {
   border: 1px solid #343a40;
-  padding: 20px 20px;
+  padding: 20px;
   margin-top: 20px;
 }
 
@@ -347,34 +352,29 @@ body {
   width: 100%;
   margin: 0 auto;
 }
-
 .grid__item {
   width: 100%;
   margin: 20px auto;
 }
-
 .grid__item-img {
   width: 100%;
   display: block;
 }
-
 .grid__item-desc {
   background-color: rgba(0, 0, 0, 0.5);
   color: peachpuff;
   padding: 10px;
 }
-
 .grid__item-desc p {
   margin: 0;
 }
-
 .grid__title {
   text-decoration: none;
   text-align: center;
 }
 
 .entry__connect {
-  border: 1px solid black;
+  border: 1px solid #343a40;
   padding: 20px 20px;
   margin-top: 30px;
 }
@@ -395,24 +395,20 @@ body {
     grid-template-rows: auto;
     gap: 15px 15px;
   }
-
   .grid__img {
     display: block;
     width: 100%;
     margin-top: 20px;
   }
-
   .grid__item {
     position: relative;
     overflow: hidden;
     width: inherit;
     margin: 0;
   }
-
   .grid__item-img {
     transition: transform 0.3s;
   }
-
   .grid__item-desc {
     position: absolute;
     top: 100%;
@@ -420,11 +416,9 @@ body {
     width: 100%;
     transition: transform 0.3s;
   }
-
   .grid__item:hover .grid__item-desc {
     transform: translateY(-100%);
   }
-
   .grid__item:hover .grid__item-img {
     transform: scale(1.1);
   }
@@ -433,15 +427,14 @@ body {
     grid-column: 1/-1;
     grid-row: 1;
   }
-
-  .text__center--info {
-    text-align: unset;
-  }
-
   .text__comment {
     grid-column: 2/-1;
     grid-row: 2;
     text-align: left;
+  }
+
+  .text__center--info {
+    text-align: unset;
   }
 
   .entry {
@@ -524,7 +517,7 @@ body {
 .price__reward, .price__place, .price__payment {
   border: 1px solid #343a40;
   padding: 20px 20px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 .price__place h4, .price__place p, .price__place a {
   margin: 0;
@@ -539,6 +532,20 @@ body {
 .cena {
   padding-left: 50px;
   text-align: right;
+}
+
+.price__button {
+  display: grid;
+  text-decoration: none;
+  text-align: center;
+  font-weight: bold;
+  padding: 10px;
+  max-width: 500px;
+  border-radius: 10px;
+  margin-top: 30px;
+  border: 1px solid #343a40;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (min-width: 960px) {

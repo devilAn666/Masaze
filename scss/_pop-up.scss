@@ -51,7 +51,7 @@
   line-height: 1;
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: variables.$breakpoint-s) {
   .popup {
     width: 500px;
 
@@ -75,7 +75,7 @@
   font-size: 20px;
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: variables.$breakpoint-l) {
   .popup {
     width: 600px;
 

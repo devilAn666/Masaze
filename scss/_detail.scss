@@ -1,7 +1,7 @@
 @use 'variables';
 
 .detail {
-  padding: 5px 5%;
+  padding: variables.$padding-5;
 
   &__img {
     width: 100%;
@@ -9,10 +9,10 @@
   }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: variables.$breakpoint-m) {
   .detail {
     display: grid;
-    padding: 10px 10%;
+    padding: variables.$padding-10;
     grid-template-columns: 1fr 2fr;
     grid-template-rows: 474px;
     gap: 25px;
@@ -29,9 +29,9 @@
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: variables.$breakpoint-l) {
   .detail {
-    padding: 20px 20%;
+    padding: variables.$padding-20;
     gap: 50px;
   }
 }
