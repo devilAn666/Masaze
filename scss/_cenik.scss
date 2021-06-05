@@ -16,17 +16,42 @@
   }
 
   &__reward,
-  &__place,
   &__payment {
     border: 1px solid variables.$f-primary;
+    border-radius: 10px;
     padding: 20px 20px;
     margin-top: 30px;
   }
 
-  &__place h4,
-  &__place p, 
-  &__place a {
-    margin: 0;
+  &__place {
+    display: grid;
+    padding: 20px 20px;
+    margin-top: 30px;
+    max-width: 500px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    h4,
+    p, 
+    a {
+      margin: 0;
+    }
+  }
+
+
+  &__button {
+    display: grid;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    max-width: 500px;
+    border-radius: 10px;
+    margin-top: 30px;
+    border: 1px solid variables.$f-primary;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   td,
@@ -42,21 +67,7 @@
   text-align: right;
 }
 
-.price__button {
-  
-  display: grid;
-  text-decoration: none;
-  text-align: center;
-  font-weight: bold;
-  padding: 10px;
-  max-width: 500px;
-  border-radius: 10px;
-  margin-top: 30px;
-  border: 1px solid variables.$f-primary;
-  margin-left: auto;
-  margin-right: auto;
-  
-}
+
 
 @media screen and (min-width: variables.$breakpoint-m) {
   .price {
